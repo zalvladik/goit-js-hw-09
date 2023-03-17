@@ -24,8 +24,8 @@ const options = {
             return Notiflix.Notify.failure("Please choose a date in the future")
         }
         buttonStart.removeAttribute('disabled', 'disabled')
-        resultOnClose = (selectDate.getTime() - Date.now())
-        timeForTimerBack = resultOnClose
+        timeForTimerBack = (selectDate.getTime() - Date.now())
+        
     },
     startTimer(){
       if(buttonStart.hasAttribute('disabled', 'disabled')){
